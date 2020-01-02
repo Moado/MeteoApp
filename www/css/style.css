@@ -1,0 +1,23 @@
+/* Empty. Add your own CSS if you like */
+.container{
+position: relative;
+width: 100px;
+
+}/* on utilise la position relative*/
+.mask{
+position : absolute ; 	
+top: 0 ;
+left:0;
+width: 100px;
+height: 100px;
+background: radial-gradient(circle, transparent 50px, white 50px);
+
+}
+
+.scroll{ height: 100%;}
+#map{
+
+height: 600px;
+
+
+}

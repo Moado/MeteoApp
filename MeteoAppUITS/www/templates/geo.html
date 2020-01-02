@@ -1,0 +1,15 @@
+geo.html
+<ion-view view-title="Géolocalisation">
+  <ion-content>
+<div class ="padding">
+
+</br>
+<label class="item-floating-label"> Time: {{position.timestamp|date:'HH:mm:ss'}} </label>
+  <label class="item-floating-label"> Latitude: {{position.coords.latitude}} </label>
+  
+<label class="item-floating-label"> Longitude: {{position.coords.longitude}} </label>
+</div>
+<br/>
+<div id="map" data-tap-disabled="true"> </div> 
+  </ion-content> 
+</ion-view>

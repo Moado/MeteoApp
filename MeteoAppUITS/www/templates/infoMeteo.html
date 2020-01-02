@@ -1,0 +1,24 @@
+infoMeteo.html
+<ion-view view-title="{{meteo.city.name}}/{{meteo.city.country}}">
+<ion-content class="padding">
+   <div class="padding">
+   
+<label class="item-floating-label"> Longitude: {{meteo.city.coord.lon}} </label>
+<label class="item-floating-label"> Latitude: {{meteo.city.coord.lat}} </label> 
+<label class="item-floating-label"> Population: {{meteo.city.population}} </label> 
+      </div>
+
+<div class="list">
+	<a class="item item-avatar" href="#" ng-repeat="m in meteo.list">
+<img src="img/{{m.weather[0].main}}.png">
+<h2> {{m.dt*1000|date:'EEEE dd-MM-yy HH:mm'}} </h2> 
+<p> <strong>{{m.temp.day-273.15|number:0}} °C</strong> </p>
+
+</a>
+</div>
+
+
+
+
+</ion-content>
+</ion-view>
